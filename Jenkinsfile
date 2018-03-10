@@ -35,4 +35,7 @@ echo "hello this is my first test"'''
       }
     }
   }
+  environment {
+    env = 'test'
+  }
 }
