@@ -5,13 +5,12 @@ pipeline {
       parallel {
         stage('test hello') {
           steps {
-            sh '''#!/bin/bash
-                echo "hello this is my first test"'''
+            echo 'this is my first step'
           }
         }
       }
     }
-    stage('re-run') {
+    stage('status') {
       steps {
         echo 'success'
       }
